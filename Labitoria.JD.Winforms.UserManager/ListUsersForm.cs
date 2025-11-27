@@ -12,10 +12,15 @@ namespace Labitoria.JD.Winforms.UserManager
 {
     public partial class ListUsersForm : Form
     {
+        UserRepository repository = new UserRepository();
         public ListUsersForm()
         {
             InitializeComponent();
-            UserRepository repository = new UserRepository();
+            LoadUsersToDataGridView();
+        }
+
+        private void LoadUsersToDataGridView()
+        {
             List<User> users = repository.GetAll();
             dgViewUsers.DataSource = users;
         }
@@ -36,6 +41,9 @@ namespace Labitoria.JD.Winforms.UserManager
             addUserForm.ShowDialog();
         }
 
-       
+        private void btnRefresh_Click(object sender, EventArgs e)
+        {
+            LoadUsersToDataGridView();
+        }
     }
 }

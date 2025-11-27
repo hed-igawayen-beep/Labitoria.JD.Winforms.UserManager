@@ -95,6 +95,7 @@
             btnRefresh.TabIndex = 14;
             btnRefresh.Text = "Refresh";
             btnRefresh.UseVisualStyleBackColor = true;
+            btnRefresh.Click += btnRefresh_Click;
             // 
             // ListUsersForm
             // 
