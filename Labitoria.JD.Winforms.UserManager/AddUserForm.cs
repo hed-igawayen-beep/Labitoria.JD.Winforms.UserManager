@@ -1,3 +1,5 @@
+using Gawayen.Winforms.UserManager;
+
 namespace Labitoria.JD.Winforms.UserManager
 {
     public partial class AddUserForm : Form

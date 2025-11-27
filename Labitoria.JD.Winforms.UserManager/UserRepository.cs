@@ -1,6 +1,6 @@
 ﻿using SQLite;
 
-namespace Labitoria.JD.Winforms.UserManager
+namespace Gawayen.Winforms.UserManager
 {
     public class UserRepository
     {
@@ -20,12 +20,12 @@ namespace Labitoria.JD.Winforms.UserManager
             return true;
         }
 
-        public List<User> GetAll() 
-        { 
-           return _connection.Table<User>().ToList();
+        public List<User> GetAll()
+        {
+            return _connection.Table<User>().ToList();
         }
 
-        public User Get(int id) 
+        public User Get(int id)
         {
             return _connection.Find<User>(id);
         }

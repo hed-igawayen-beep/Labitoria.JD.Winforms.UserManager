@@ -1,4 +1,6 @@
-namespace Labitoria.JD.Winforms.UserManager
+using Labitoria.JD.Winforms.UserManager;
+
+namespace Gawayen.Winforms.UserManager
 {
     internal static class Program
     {

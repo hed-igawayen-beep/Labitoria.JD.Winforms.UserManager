@@ -1,6 +1,6 @@
 ﻿using SQLite;
 
-namespace Labitoria.JD.Winforms.UserManager
+namespace Gawayen.Winforms.UserManager
 {
     public class User
     {
