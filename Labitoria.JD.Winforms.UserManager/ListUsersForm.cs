@@ -30,6 +30,12 @@ namespace Labitoria.JD.Winforms.UserManager
 
         }
 
-        
+        private void btnNew_Click(object sender, EventArgs e)
+        {
+            AddUserForm addUserForm = new AddUserForm();
+            addUserForm.ShowDialog();
+        }
+
+       
     }
 }

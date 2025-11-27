@@ -30,8 +30,9 @@
         {
             label4 = new Label();
             btnSave = new Button();
-            button1 = new Button();
+            btnNew = new Button();
             dgViewUsers = new DataGridView();
+            btnRefresh = new Button();
             ((System.ComponentModel.ISupportInitialize)dgViewUsers).BeginInit();
             SuspendLayout();
             // 
@@ -60,19 +61,20 @@
             btnSave.Text = "View";
             btnSave.UseVisualStyleBackColor = false;
             // 
-            // button1
+            // btnNew
             // 
-            button1.BackColor = Color.AliceBlue;
-            button1.Dock = DockStyle.Top;
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.Font = new Font("Century Gothic", 14.25F, FontStyle.Bold);
-            button1.ForeColor = Color.DimGray;
-            button1.Location = new Point(0, 57);
-            button1.Name = "button1";
-            button1.Size = new Size(547, 41);
-            button1.TabIndex = 12;
-            button1.Text = "New";
-            button1.UseVisualStyleBackColor = false;
+            btnNew.BackColor = Color.AliceBlue;
+            btnNew.Dock = DockStyle.Top;
+            btnNew.FlatStyle = FlatStyle.Flat;
+            btnNew.Font = new Font("Century Gothic", 14.25F, FontStyle.Bold);
+            btnNew.ForeColor = Color.DimGray;
+            btnNew.Location = new Point(0, 57);
+            btnNew.Name = "btnNew";
+            btnNew.Size = new Size(547, 41);
+            btnNew.TabIndex = 12;
+            btnNew.Text = "New";
+            btnNew.UseVisualStyleBackColor = false;
+            btnNew.Click += btnNew_Click;
             // 
             // dgViewUsers
             // 
@@ -85,13 +87,23 @@
             dgViewUsers.Size = new Size(547, 322);
             dgViewUsers.TabIndex = 13;
             // 
+            // btnRefresh
+            // 
+            btnRefresh.Location = new Point(229, 426);
+            btnRefresh.Name = "btnRefresh";
+            btnRefresh.Size = new Size(87, 36);
+            btnRefresh.TabIndex = 14;
+            btnRefresh.Text = "Refresh";
+            btnRefresh.UseVisualStyleBackColor = true;
+            // 
             // ListUsersForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(547, 509);
+            Controls.Add(btnRefresh);
             Controls.Add(dgViewUsers);
-            Controls.Add(button1);
+            Controls.Add(btnNew);
             Controls.Add(btnSave);
             Controls.Add(label4);
             Name = "ListUsersForm";
@@ -104,7 +116,8 @@
         #endregion
         private Label label4;
         private Button btnSave;
-        private Button button1;
+        private Button btnNew;
         private DataGridView dgViewUsers;
+        private Button btnRefresh;
     }
 }

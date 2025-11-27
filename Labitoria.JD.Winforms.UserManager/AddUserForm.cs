@@ -37,6 +37,9 @@ namespace Labitoria.JD.Winforms.UserManager
                 {
                     MessageBox.Show("Boy na-saved!","Successful",
                         MessageBoxButtons.OK,MessageBoxIcon.Information);
+                    txtFullName.Clear();
+                    txtPassword.Clear();
+                    txtUsername.Clear();
                 }
             }
         }
